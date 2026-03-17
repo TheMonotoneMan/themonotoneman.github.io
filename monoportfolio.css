@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 html {
-    background-color: rgb(42, 68, 89);
+    background-image: url("images/auroro.png");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     background-color: transparent;
     font-family:Ubuntu;
+    max-width: 90%;
 }
 
 p {
@@ -16,9 +19,9 @@ p {
 
 .content {
     width: 80%;
-    margin: 2px auto;
+    margin: 5px auto;
     padding: 5px 10px;
-    background-color: rgba(161, 174, 185, 0.587);
+    background-color: rgba(161, 174, 185, 0.75);
     border-radius: 2px;
 }
 
@@ -27,6 +30,16 @@ p {
     font-size: 1.25rem;
     font-weight: 500;
     color: rgb(255, 0, 0);
+}
+
+.projImg {
+    display: inline;
+    padding: 2px;
+}
+
+.charCon {
+    max-width: 256px;
+    max-height: 256px;
 }
 
 #big_logo{
@@ -41,6 +54,7 @@ p {
     animation: appear 0.75s ease-in-out forwards;
     animation-iteration-count: 1;
     animation-delay: 2s;
+    background-color: rgba(42, 68, 89, 0.875);
 }
 
 #main_name {
@@ -53,7 +67,6 @@ p {
     width: 80%;
     margin: 2px auto;
     padding: 5px 10px;
-    background-color: rgba(161, 174, 185, 0.587);
     border-radius: 2px;
 }
 
