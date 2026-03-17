@@ -57,10 +57,6 @@ p {
     border-radius: 2px;
 }
 
-#projSegTitle {
-    text-align: center;
-}
-
 @keyframes appear {
     from {opacity: 0;}
     to {opacity: 1;}
