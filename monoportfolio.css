@@ -37,6 +37,12 @@ p {
     padding: 2px;
 }
 
+.projImg:hover {
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+    cursor: pointer;
+}
+
 .contextAnim {
     animation: build 3s ease-in-out forwards;
     overflow: hidden;
