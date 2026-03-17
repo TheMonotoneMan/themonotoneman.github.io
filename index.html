@@ -42,22 +42,26 @@
                                 <p>These are just some simple character ideas I wanted to make, and one day plan on taking somewhere.
                                     These four in particular are all intended for use in a game I am currently working on as a personal project, but that is still in it's very early stages.
                                 </p>
+                                <p class="contextAnim" id="character_text">For a little context, the main storybeats are the existance of two worlds, Earth and Auroro. Earth is what we know, a people powered by our ability to create.
+                                    Our ability to create led us to the development on technology, our backbone for everything we do now. Auroro, though, is a little different. 
+                                    The Auroran people are a civilization powered by the ability to understand, something that meshed well with the existance of arcane magic on Auroro, which allows them to survive the endless winter that spans their world.
+                                    Click on any image to get some info!</p>
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="images/CharCons/VesselConcept.png" alt="Vessel Concept" class="img-fluid projImg" />
+                                        <img src="images/CharCons/VesselConcept.png" alt="Vessel Concept" class="img-fluid projImg" id="vessel_img" />
                                     </div>
                                     <div class="col-md-6">
-                                        <img src="images/CharCons/BishopConcept.png" alt="Bishop Concept" class="img-fluid projImg" />
+                                        <img src="images/CharCons/BishopConcept.png" alt="Bishop Concept" class="img-fluid projImg" id="bishop_img" />
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="images/CharCons/FrostMancerConcept.png" alt="Frostmancer Concept" class="img-fluid projImg" />
+                                        <img src="images/CharCons/FrostMancerConcept.png" alt="Frostmancer Concept" class="img-fluid projImg" id="frostmancer_img" />
                                     </div>
                                     <div class="col-md-6">
-                                        <img src="images/CharCons/CandleGuardConcept.png" alt="Candle Guard Concept" class="img-fluid projImg" />
+                                        <img src="images/CharCons/CandleGuardConcept.png" alt="Candle Guard Concept" class="img-fluid projImg" id="candleguard_img" />
                                     </div>
                                 </div>
                             </div>
@@ -67,5 +71,39 @@
                     </div>
                 </div>
         </div>
+
+        <script>
+            const vesselImg = document.getElementById('vessel_img');
+            const bishopImg = document.getElementById('bishop_img');
+            const frostmancerImg = document.getElementById('frostmancer_img');
+            const candleGuardImg = document.getElementById('candleguard_img');
+            const characterText = document.getElementById('character_text');
+
+            vesselImg.addEventListener('click', () => {
+                characterText.textContent = "The Vessel is, well, a vessel. At his core he's nothing more than a regular man, lived a normal life before the events of [PROJECT THAT IS CURRENTLY IN EARLY DEVELOPMENT]. Now, his will is yours, his body to be a shell for your actions. He might not take too kindly to your unprecedented seizure of control, though.";
+                triggerAnimation(characterText, 'build');
+            });
+
+            bishopImg.addEventListener('click', () => {
+                characterText.textContent = "The Bishop was similar to the Vessel, just a bit more of a churchgoer. Now, I just want you to think of what would happen to the mind of a man who basically had to watch the world end, discover the existance of another world and its people, AND witness [HIS WONDEROUS GAZE UPON OUR PEOPLE]. If he seems to always be a bit shaken up, please just give him some understanding.";
+                triggerAnimation(characterText, 'build');
+            });
+
+            frostmancerImg.addEventListener('click', () => {
+                characterText.textContent = "The Frostmancer was one of the first characters I designed to be from the Auroran world, and I wanted to find a balance between recognizably human, but noticeable Auroran. The Auroran people have a bit of a thing for candles, with many aspects of their lives and culture stemming from their light and warmth being so important in a world of endless snow and ice.";
+                triggerAnimation(characterText, 'build');
+            });
+
+            candleGuardImg.addEventListener('click', () => {
+                characterText.textContent = "Expendable.";
+                triggerAnimation(characterText, 'build');
+            });
+
+            function triggerAnimation(element) {
+                element.classList.remove('contextAnim');
+                void element.offsetWidth;
+                element.classList.add('contextAnim');
+            }
+        </script>
     </body>
 </html>

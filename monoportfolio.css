@@ -37,6 +37,11 @@ p {
     padding: 2px;
 }
 
+.contextAnim {
+    animation: build 3s ease-in-out forwards;
+    overflow: hidden;
+}
+
 
 
 #big_logo{
@@ -67,7 +72,14 @@ p {
     border-radius: 2px;
 }
 
+
+
 @keyframes appear {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@keyframes build {
+    from {height: 0;}
+    to {height: 100%;}
 }
