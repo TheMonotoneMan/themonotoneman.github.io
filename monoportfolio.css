@@ -15,14 +15,20 @@ body {
 
 p {
     font-weight: 400;
+    margin-bottom: 0;
+    padding-bottom: 5px;
 }
 
 .content {
+    background-color: #ededed;
+    max-height: 100%;
+}
+
+.content_border {
     width: 80%;
     margin: 5px auto;
-    padding: 5px 10px;
-    background-color: rgba(232, 235, 238, 0.75);
-    border-radius: 2px;
+    border: 64px solid transparent;
+    border-image: url(images/Accents/PortBorder.png) 64 round;
 }
 
 .construct_text {
@@ -67,7 +73,6 @@ p {
     animation: appear 0.75s ease-in-out forwards;
     animation-iteration-count: 1;
     animation-delay: 2.25s;
-    background-color: #4e7894d5;
 }
 
 #main_name {
@@ -76,12 +81,6 @@ p {
     color: white;
 }
 
-#bio {
-    width: 80%;
-    margin: 2px auto;
-    padding: 5px 10px;
-    border-radius: 2px;
-}
 
 
 
