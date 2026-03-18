@@ -7,6 +7,31 @@
         <link rel="icon" href="images/M3_Favicon.png" />
 
         <title>Ryan Welte, Mr Mono Man</title>
+
+        <script>
+            let splashText = 0;
+
+            document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
+                document.title = "Where do you think YOU'RE going?";
+                splashText += 1;
+            } else {
+                if (splashText === 1)
+                {
+                    document.title = "Huh? I didn't say anything.";
+                }
+                if (splashText === 2)
+                {
+                    document.title = "Ryan Welte";
+                }
+                if (splashText === 3)
+                {
+                    document.title = "Mr Mono Man";
+                    splashText = 0;
+                }
+            }
+            });
+        </script>
     </head>
     <body>
         <div id="big_logo">
