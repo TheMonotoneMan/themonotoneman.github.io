@@ -34,13 +34,18 @@ p {
 
 .projImg {
     display: inline;
-    padding: 2px;
+    margin: 2px;
 }
 
 .projImg:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 8px #ffd482;
     transition: transform 0.25s ease-in-out;
     cursor: pointer;
+}
+
+.projImg:active {
+    filter: saturate(3);
 }
 
 .contextAnim {
