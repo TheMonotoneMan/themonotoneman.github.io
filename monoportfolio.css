@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    max-width: 85%;
+    max-width: 95%;
 }
 
 p {
@@ -28,6 +28,11 @@ h1, h2, h3 {
     font-family: 'Pixelify Sans', Ubuntu;
 }
 
+
+
+.container {
+    max-width: 90%;
+}
 
 .content {
     background-color: #ededed;
@@ -83,7 +88,7 @@ h1, h2, h3 {
 }
 
 .btn {
-    border: 16px solid transparent;
+    border: 8px solid transparent;
     border-image: url(images/Accents/PortButton.png) 32 round;
 
     background-color: #ededed;
