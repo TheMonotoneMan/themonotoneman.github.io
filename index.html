@@ -34,98 +34,135 @@
         </script>
     </head>
     <body>
-        <div id="big_logo">
-            <img src="images/M3_VibrantAnim.gif" alt="M3 animation that took an eternity to create" class="img-fluid" />
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title subtitle" id="sidebarMenuLabel">Pages</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#">Main (You are Here)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Info</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="container" id="after_logo">
+
+        <button class="btn btn-primary position-fixed top-0 m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+            ☰
+        </button>
+
+        <main class="container">
+            <div id="big_logo">
+                <img src="images/M3_VibrantAnim.gif" alt="M3 animation that took an eternity to create" class="img-fluid" />
+            </div>
+
+
+
+            <br>
+            <div class="container" id="after_logo">
                     <div class="mainName">
-                    <h1 id="main_name" class="typed">Ryan <span id="welte"></span></h1>
-                    <p class="constructText">Page Still Under Construction, Thank You For Your Patience</p>
-                </div>
+                        <h1 id="main_name" class="typed">Ryan <span id="welte"></span></h1>
+                        <p class="constructText">Page Still Under Construction, Thank You For Your Patience</p>
+                    </div>
+                        
+                    <div class="contentBorder">
+                        <div id="bio" class="content">
+                            <h2>Who am I?</h2>
+                            <p>
+                                Hey, thanks for stopping by. I'm Ryan, most just call me Welte since I've got a pretty common first name. 
+                                I'm currently a student at Boise State University, going for a Bachelor's in Games, Interactive Media, and Mobile Technologies (GIMM), and am currently on track to graduate in Spring 2028.
+                                I've put together this little hub for my projects and information for you folks, look around and see what you can find. Maybe you'll see something you like.
+                                Maybe you'll just like looking at the site itself, that'd be something. Just one note, what you see here is really my ground zero, as my time in the GIMM program is the first time I've been able to delve into any interactive media creation as a whole. I will get better over time!
+                                I'm working to go into game development, using my time here at BSU to build my skillset in every aspect of game development (and more) towards something great!
+                            </p>
+                            <p>Well, go ahead and look around, I'll still be here.</p>
+                        </div>
+                    </div>
                     
-                <div class="contentBorder">
-                    <div id="bio" class="content">
-                        <h2>Who am I?</h2>
-                        <p>
-                            Hey, thanks for stopping by. I'm Ryan, most just call me Welte since I've got a pretty common first name. 
-                            I'm currently a student at Boise State University, going for a Bachelor's in Games, Interactive Media, and Mobile Technologies (GIMM), and am currently on track to graduate in Spring 2028.
-                            I've put together this little hub for my projects and information for you folks, look around and see what you can find. Maybe you'll see something you like.
-                            Maybe you'll just like looking at the site itself, that'd be something. Just one note, what you see here is really my ground zero, as my time in the GIMM program is the first time I've been able to delve into any interactive media creation as a whole. I will get better over time!
-                            I'm working to go into game development, using my time here at BSU to build my skillset in every aspect of game development (and more) towards something great!
-                        </p>
-                        <p>Well, go ahead and look around, I'll still be here.</p>
-                    </div>
-                </div>
-                
-                <br>
+                    <br>
 
-                <div class="contentBorder">
-                    <div class="content" id="current_big_thing">
-                        <h2>What Am I Doing Right Now?</h2>
-                        <p>
-                            Currently, I am working on a solo game that I can use as a bit of a "beginning benchmark" for my abilities regarding game development. I'm developing this in conjunction with working on other little projects,
-                            specifically those in relation to my time in the GIMM program. I wanted to have something that I was making for myself outside of the program, that way I can have a nice little outside project to work on improving things that the program has introduced me to.
-                        </p>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="contentBorder">
-                        <div id="projects" class="content">
-                        <h2>Some Stuff I've Done</h2>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h3>Character Concepts</h3>
-                                    <p>
-                                        These are just some simple character ideas I wanted to make, and one day plan on taking somewhere.
-                                        These four in particular are all intended for use in a game I am currently working on as a personal project, but that is still in it's very early stages.
-                                    </p>
-                                    <p class="contextAnim" id="character_text">For a little context, the main storybeats are the existance of two worlds, Earth and Auroro. Earth is what we know, a people powered by our ability to create.
-                                        Our ability to create led us to the development of technology, our backbone for everything we do now. Auroro, though, is a little different. 
-                                        The Auroran people are a civilization powered by the ability to understand, something that meshed well with the existance of arcane magic on Auroro. A much needed ability, which allows the Auroran people to survive the endless winter that spans their world.
-                                        Click on any image to get some info!</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="images/CharCons/VesselConcept.png" alt="Vessel Concept" class="img-fluid projImg" id="vessel_img" />
-                                        </div>
-                                        <div class="col-md-6">
-                                            <img src="images/CharCons/BishopConcept.png" alt="Bishop Concept" class="img-fluid projImg" id="bishop_img" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="images/CharCons/FrostMancerConcept.png" alt="Frostmancer Concept" class="img-fluid projImg" id="frostmancer_img" />
-                                        </div>
-                                        <div class="col-md-6">
-                                            <img src="images/CharCons/CandleGuardConcept.png" alt="Candle Guard Concept" class="img-fluid projImg" id="candleguard_img" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                    <div class="contentBorder">
+                        <div class="content" id="current_big_thing">
+                            <h2>What Am I Doing Right Now?</h2>
+                            <p>
+                                Currently, I am working on a solo game that I can use as a bit of a "beginning benchmark" for my abilities regarding game development. I'm developing this in conjunction with working on other little projects,
+                                specifically those in relation to my time in the GIMM program. I wanted to have something that I was making for myself outside of the program, that way I can have a nice little outside project to work on improving things that the program has introduced me to.
+                            </p>
                             <br>
-
+                            <p>
+                                The main other project I'm working on is an early prototype for an Unreal Engine 5 game, which is still in the very early "Figure things out and come up with fun gameplay" stage. 
+                                This is the GIMM program's big project, which starts with an early prototype in the Spring semester of Sophomore year, and spans through the entirety of the Junior year. As that progresses, I'll update this site with the most recent previews of the project.
+                            </p>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h3>AI-Powered PC Component Finder</h3>
-                                    <p>This site is a simple tool that takes a set of user inputs and recommends a PC components list created with assistance from an AI.
-                                        The intention was to create a simple interface that could help remove some of the difficulties that come with finding parts for a custom PC build, and help make sure that you don't accidentally
-                                        get incompatible components.
-                                    </p>
+
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="images/PCPartDemo.png" alt="PC Part Demo" class="img-fluid" />
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-        </div>
+
+                    <br>
+
+                    <div class="contentBorder">
+                            <div id="projects" class="content">
+                            <h2>Some Stuff I've Done</h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3>Character Concepts</h3>
+                                        <p>
+                                            These are just some simple character ideas I wanted to make, and one day plan on taking somewhere.
+                                            These four in particular are all intended for use in a game I am currently working on as a personal project, but that is still in it's very early stages.
+                                        </p>
+                                        <p class="contextAnim" id="character_text">For a little context, the main storybeats are the existance of two worlds, Earth and Auroro. Earth is what we know, a people powered by our ability to create.
+                                            Our ability to create led us to the development of technology, our backbone for everything we do now. Auroro, though, is a little different. 
+                                            The Auroran people are a civilization powered by the ability to understand, something that meshed well with the existance of arcane magic on Auroro. A much needed ability, which allows the Auroran people to survive the endless winter that spans their world.
+                                            Click on any image to get some info!</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="images/CharCons/VesselConcept.png" alt="Vessel Concept" class="img-fluid projImg" id="vessel_img" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="images/CharCons/BishopConcept.png" alt="Bishop Concept" class="img-fluid projImg" id="bishop_img" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="images/CharCons/FrostMancerConcept.png" alt="Frostmancer Concept" class="img-fluid projImg" id="frostmancer_img" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="images/CharCons/CandleGuardConcept.png" alt="Candle Guard Concept" class="img-fluid projImg" id="candleguard_img" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3>AI-Powered PC Component Finder</h3>
+                                        <p>This site is a simple tool that takes a set of user inputs and recommends a PC components list created with assistance from an AI.
+                                            The intention was to create a simple interface that could help remove some of the difficulties that come with finding parts for a custom PC build, and help make sure that you don't accidentally
+                                            get incompatible components.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="images/PCPartDemo.png" alt="PC Part Demo" class="img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+        </main>
+        
 
         <script>
             const vesselImg = document.getElementById('vessel_img');
@@ -169,7 +206,7 @@
                 };
             }
 
-            docuement.addEventListener("DOMContentLoaded", function() {
+            document.addEventListener("DOMContentLoaded", function() {
                 window.scrollTo(0, 0);
             });
         </script>
