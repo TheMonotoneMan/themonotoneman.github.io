@@ -30,6 +30,10 @@ h1, h2, h3 {
     max-width: 90%;
 }
 
+.container-fluid {
+    max-width: 90%;
+}
+
 .content {
     max-height: 100%;
     height: 100%;
