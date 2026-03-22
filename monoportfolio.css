@@ -92,7 +92,7 @@ h1, h2, h3 {
     background-color: #ededed;
 }
 
-.btn {
+.btn, .nav-link {
     border: 8px solid transparent;
     border-image: url(images/Accents/PortButton.png) 32 round;
 
@@ -109,13 +109,13 @@ h1, h2, h3 {
     z-index: 1;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .nav-link:hover {
     background-color: #ededed;
     color: #ffd482;
     border-color: transparent;
 }
 
-.btn:active {
+.btn:active, .nav-link:active {
     background-color: #ededed;
     color: #71a3c4;
 }
@@ -123,6 +123,10 @@ h1, h2, h3 {
 .btn:hover:active {
     background-color: #ededed;
     color: #71a3c4;
+}
+
+.nav-link {
+    margin: 2px auto;
 }
 
 
