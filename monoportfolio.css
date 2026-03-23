@@ -67,7 +67,7 @@ h1, h2, h3 {
 }
 
 .projImg:active {
-    filter: saturate(3);
+    filter: saturate(1.5);
 }
 
 .contextAnim {
@@ -86,6 +86,10 @@ h1, h2, h3 {
 
 .conInfo {
     text-align: center;
+}
+
+.conInfo li {
+    list-style: none;
 }
 
 .offcanvas {
